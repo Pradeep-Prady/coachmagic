@@ -1,4 +1,9 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Route,
+  RouterProvider,
+  Routes,
+  createBrowserRouter,
+} from "react-router-dom";
 
 //   User Routes
 import Main from "./components/user/Main";
@@ -25,7 +30,7 @@ import TieUpConfigEdit from "./components/admin/tieUp/TieUpConfigEdit";
 import AccountAddForm from "./components/admin/account/AccountAddForm";
 import AccountDetails from "./components/admin/account/AccountDetails";
 import AccountEdit from "./components/admin/account/AccountEdit";
-import GeneralQueryDetails from './components/admin/generalQueries/GeneralQueryDetails';
+import GeneralQueryDetails from "./components/admin/generalQueries/GeneralQueryDetails";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -137,9 +142,20 @@ function App() {
     },
   ]);
   return (
-    <div className="">
-      <RouterProvider router={appRouter} />
-    </div>
+    <>
+      <div className="">
+        <RouterProvider router={appRouter} />
+      </div>
+
+      {/* <div>
+        User Routes
+        <Main />
+
+        <Routes>
+          <Route path="/" element={<Dashboard/>} />
+        </Routes>
+      </div> */}
+    </>
   );
 }
 

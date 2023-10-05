@@ -9,11 +9,11 @@ export default function GeneralQueries() {
             <div className="bg-mylight  m-5 p-3 rounded-lg">
               <div className="bg-white p-5 rounded-md">
                 <div className="grid grid-cols-2 my-2">
-                  <p>Name</p>
+                  <p className="font-semibold">Name</p>
                   <p>Mano Sundar</p>
                 </div>
                 <div className="grid grid-cols-2 my-2">
-                  <p>Query About</p>
+                  <p className="font-semibold">Query About</p>
                   <p>Application Feedback</p>
                 </div>
                 <div className="flex items-center justify-center  mt-7">

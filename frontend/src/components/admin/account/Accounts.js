@@ -18,11 +18,11 @@ const Accounts = () => {
           <div className="bg-mylight  m-5 p-3 rounded-lg">
             <div className="bg-white p-5 rounded-md">
               <div className="grid grid-cols-2 my-2">
-                <p> Name</p>
+                <p className="font-semibold"> Name</p>
                 <p> Mano Sundar</p>
               </div>
               <div className="grid grid-cols-2 my-2">
-                <p>Email</p>
+                <p className="font-semibold">Email</p>
                 <p>abc@gmail.com</p>
               </div>
               <div className="flex items-center justify-center  mt-7">
